@@ -1,0 +1,195 @@
+.body {
+ background-color: #f4f7f6;
+ color: goldenrod;
+}
+
+header{
+ background-color: rgb(236, 150, 20);
+ padding: 10px 5%;
+}
+
+nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+/*mposta la dimensione del testo.
+rem è un’unità relativa alla dimensione del font della pagina (di solito 16px)*/
+
+.logo {
+ font-size: 1.5rem; 
+ font-weight: bold;
+ color: #0004fc;
+}
+
+.logo span { 
+ color: #ff0000; 
+}
+
+nav ul { 
+ display: flex; 
+ list-style: none;  /*NO lista puntata*/
+}
+
+nav ul li { 
+ margin-left: 20px; 
+}
+
+nav ul li a { 
+ color: #333; 
+ font-weight: 500; 
+}
+
+
+.hero {
+ height: 60vh;
+ background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1200');
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ flex-direction: column;  /*me lo mette in colonna*/
+ justify-content: center;
+ align-items: center;
+ color: white;
+ text-align: center;
+ padding: 0 20px;
+}
+
+.hero h1 { 
+ font-size: 3rem; 
+ margin-bottom: 10px; 
+}
+
+
+
+
+/* tutti i racconti */
+.section-title { 
+ text-align: center; 
+ margin: 40px 0; 
+ font-size: 2rem; 
+}
+
+.grid-racconti {
+ display: grid;  /*UTILE X CRERAE GRIGLIE RESPONSIVE*/
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 25px;
+ padding: 0 5%;
+ max-width: 1200px;
+ margin: 0 auto;
+}
+
+.card {
+ background: #f8ac55;
+ border-radius: 10px;
+ box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+ transition: transform 0.3s;
+}
+
+
+.card-img { 
+ height: 200px; 
+ background-size: cover; 
+ background-position: center; 
+}
+
+.card-content { 
+    padding: 20px; 
+}
+
+.btn1 {
+    background: #ff631b;
+    color: rgb(0, 0, 0);
+    padding: 9px 18px;
+    border-radius: 5px;  /*arrotonda angoli*/
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+   }
+   
+   .btn1:hover { 
+       background: #ff631b; 
+   }
+
+.btn2 {
+    background: #f09797;
+    color: rgb(0, 0, 0);
+    padding: 9px 18px;
+    border-radius: 5px;  /*arrotonda angoli*/
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+   }
+   
+   .btn2:hover { 
+       background: #f09797; 
+   }
+
+
+
+.btn3 {
+    background: #a2cff5;
+    color: rgb(0, 0, 0);
+    padding: 9px 18px;
+    border-radius: 5px;  /*arrotonda angoli*/
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+   }
+   
+   .btn3:hover { 
+       background: #a2cff5; 
+   }
+
+
+
+   
+
+
+/* Form dove uno può mettere il suo viaggio*/
+.form-section {
+ background: #2c3e50;
+ color: white;
+ padding: 60px 5%;
+ margin-top: 50px;
+ text-align: center;
+}
+
+#travel-form {
+ max-width: 600px;
+ margin: 30px auto 0;
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+}
+
+#travel-form input, #travel-form textarea {
+ padding: 12px;
+ border-radius: 5px;
+ border: none;
+}
+
+.btn {
+ background: #3498db;
+ color: white;
+ padding: 12px 25px;
+ border-radius: 5px;  /*arrotonda angoli*/
+ border: none;
+ cursor: pointer;
+ font-size: 1rem; /*dim testo normal*/
+ transition: 0.3s;
+}
+
+.btn:hover { 
+    background: #2980b9; 
+}
+
+
+.footer {
+ text-align: center;
+ padding: 40px;
+ background: #1a252f;
+ color: #bdc3c7;
+}
+

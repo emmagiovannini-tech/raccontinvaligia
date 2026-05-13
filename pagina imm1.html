@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Blog di Chiara Ronchi | Una stazione all'alba</title>
+    <style>
+        :root {
+            --dawn-purple: #58381d;
+            --dawn-pink: #f15730;
+            --dawn-orange: #fff676;
+            --dawn-gold: rgb(255, 174, 61);
+            --text-dark: #f83131;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--dawn-purple), var(--dawn-pink), var(--dawn-orange));
+            background-attachment: fixed;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 100px 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: -50px auto 50px auto;
+            padding: 20px;
+        }
+
+        article {
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--text-dark);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .post-meta {
+            color: var(--dawn-pink);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        h2 {
+            color: var(--dawn-purple);
+            font-size: 2rem;
+            margin-top: 10px;
+        }
+
+        .station-image {
+            width: 100%;
+            height: 400px;
+            background: url('https://images.unsplash.com/photo-1676304437086-ad9db3b3df66?fm=jpg&q=60&w=3000&auto=format&fit=crop') center/cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--dawn-pink);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background: var(--dawn-purple);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Chiara Ronchi</h1>
+        <p>Diari di viaggio e binari infiniti</p>
+    </header>
+
+    <div class="container">
+        <article>
+            <div class="post-meta">1 Agosto 2023 • Riflessioni dal Binario 4</div>
+            <h2>Una stazione all'alba</h2>
+            
+            <div class="station-image"></div>
+
+            <div class="content">
+                <p>
+                    La valigia era più pesante del necessario, ma non per i vestiti... C’è una magia particolare nel trovarsi in stazione quando il resto del mondo sembra ancora sospeso nel sonno. Stamattina, l'aria fredda profumava di ferro e rugiada. Mentre aspettavo il mio treno, il cielo ha iniziato a tingersi di un rosa aranciato quasi irreale, trasformando i binari in lunghi nastri d'oro.
+                </p>
+                <p>
+                    Le luci della stazione, lottavano con i primi raggi del sole. In quel momento di quiete, tra un annuncio e l'altro, ho capito che ogni partenza all'alba non è solo un viaggio fisico, ma un nuovo inizio per l'anima.
+                </p>
+                <blockquote>
+                    "La stazione non è un punto di arrivo, ma un porto di luce dove i sogni prendono velocità."
+                </blockquote>
+            </div>
+
+            <a href="#" class="btn">Leggi altri racconti</a>
+        </article>
+    </div>
+
+    <footer>
+        &copy; 2026 Il Blog di Chiara Ronchi. Creato con amore e polvere di stelle.
+    </footer>
+
+</body>
+</html>
