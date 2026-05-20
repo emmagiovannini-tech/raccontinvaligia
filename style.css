@@ -248,3 +248,12 @@ nav ul li a {
  color: #bdc3c7;
 }
 
+@media (max-width: 768px) {
+    .orange-card,
+    .card-arancione {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
